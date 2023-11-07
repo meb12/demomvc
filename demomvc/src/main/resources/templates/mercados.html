@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>MVC</title>
+
+</head>
+<body>
+<h1> Lista - Mercado</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Produto</th>
+    <th>Quantidade</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="mercado: ${mercados}" >
+    <td th:text="${mercado.produto}">Produto</td>
+    <td th:text="${mercado.quantidade}" >Quantidade</td>
+  </tr>
+  </tbody>
+</table>
+
+<hr>
+</body>
+</html>
